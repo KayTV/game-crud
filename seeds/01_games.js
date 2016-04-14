@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
     // Inserts seed entries
     knex('games').insert({
       id: 1,
-      title: 'rowValue',
+      title: 'Pokemon Go!',
       image: '',
       price: 5,
       rating: 5,
@@ -16,7 +16,7 @@ exports.seed = function(knex, Promise) {
     }),
     knex('games').insert({
       id: 2,
-      title: 'rowValue',
+      title: 'Final Fantasy X',
       image: '',
       price: 5,
       rating: 5,
@@ -25,7 +25,7 @@ exports.seed = function(knex, Promise) {
     }),
     knex('games').insert({
       id: 3,
-      title: 'rowValue',
+      title: 'Final Fantasy VII',
       image: '',
       price: 5,
       rating: 5,
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
     }),
     knex('games').insert({
       id: 4,
-      title: 'rowValue',
+      title: 'Mario Party 3',
       image: '',
       price: 5,
       rating: 5,
@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
     }),
     knex('games').insert({
       id: 5,
-      title: 'rowValue',
+      title: 'The Legend of Zelda',
       image: '',
       price: 5,
       rating: 5,
@@ -52,7 +52,7 @@ exports.seed = function(knex, Promise) {
     }),
     knex('games').insert({
       id: 6,
-      title: 'rowValue',
+      title: 'Super Smash Brothers Brawl',
       image: '',
       price: 5,
       rating: 5,
