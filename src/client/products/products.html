@@ -1,7 +1,14 @@
 <header>
-  <h1>{{title}}</h1>
+  <h1 class="headername">{{title}}</h1>
 </header>
+<div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content">
+    <!-- <b>Parallax Window</b> -->
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
+</div>
 
 <div ng-repeat="game in games">
   <h3>{{game.title}}</h3>
+  <img ng-src="{{game.image}}">
 </div>

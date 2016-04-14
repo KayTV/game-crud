@@ -1,32 +1,32 @@
-// $parallax-window-height: 30em;
-// $parallax-background-height: $parallax-window-height * 2;
-//
-// .parallax-window {
-//   max-height: $parallax-window-height;
-//   overflow: hidden;
-//   position: relative;
-//   text-align: center;
-//   width: 100%;
-// }
-//
-// .parallax-static-content {
-//   color: #9A9A8A;
-//   padding: 8em 0;
-//   position: relative;
-//   z-index: 9;
-// }
-//
-// .parallax-background {
-//   background: url("https://rpgsquare.files.wordpress.com/2014/05/final-fantasy-x-hd-luca.jpg") repeat;
-//   background-size: cover;
-//   background-color: beige;
-//   background-position: top;
-//   height: $parallax-background-height;
-//   left: 0;
-//   position: absolute;
-//   top: - $parallax-window-height / 3;
-//   width: 100%;
-// }
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: url("http://i.gzn.jp/img/2009/06/03/ff14ss/ff14ss04.jpg") repeat;
+  background-size: cover;
+  background-color: beige;
+  background-position: top;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
 
 
 .headerimg {
@@ -47,6 +47,9 @@
   margin-top: 100px;
   font-size: 65px;
   text-align: center;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  // font-style: italic;
 }
 
 .navbar {
@@ -64,6 +67,8 @@
 .navbar li a, .navbar .navbar-brand {
     color: black !important;
     border: 1px solid black;
+    width: 120px;
+    text-align: center;
     border-radius: 25px;
     margin: 5px;
 }
