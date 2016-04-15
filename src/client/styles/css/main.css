@@ -62,3 +62,12 @@
 
 .navbar-nav li.active a {
   color: #fff !important; }
+
+.gamebox {
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+  margin: 10px; }

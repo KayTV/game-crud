@@ -9,6 +9,10 @@
 </div>
 
 <div ng-repeat="game in games">
-  <h3>{{game.title}}</h3>
-  <img ng-src="{{game.image}}">
+  <div class="col-xs-4">
+    <div class="gamebox">
+      <h3>{{game.title}}</h3>
+      <img ng-src="{{game.image}}" style="height: 70%; width: 70%">
+    </div>
+  </div>
 </div>
