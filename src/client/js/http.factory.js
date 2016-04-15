@@ -9,6 +9,23 @@ angular.module('app')
     });
   };
 
+  factory.getGame = function(id) {
+    return $http({
+      method: 'GET',
+      url: '/showpage/'+id
+    });
+  };
+
+  factory.getCurrentGame = function() {
+      return movieId;
+  }
+
+  factory.setCurrentGame = function(id) {
+    gameId = id;
+    console.log('gameId', gameId);
+    return gameId;
+  }
+
   return factory;
 
 }]);
