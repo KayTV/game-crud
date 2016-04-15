@@ -14,10 +14,12 @@ angular.module('app', ['ngRoute'])
       controller: 'ShowpageController'
       })
     .when('/register', {
-      templateUrl: 'register/register.html'
+      templateUrl: 'register/register.html',
+      controller: 'RegisterController'
     })
     .when('/login', {
-      templateUrl: 'login/login.html'
+      templateUrl: 'login/login.html',
+      controller: 'LoginController'
     })
     // .when('/logout', {
     //   templateUrl: 'register/register.html'
