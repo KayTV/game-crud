@@ -81,10 +81,11 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .gamebox {
-  border: 3px solid black;
-  border-radius: 10px;
-  // text-shadow: 2px 2px grey;
+  border: 4px solid grey;
+  box-shadow: 10px 10px 10px #94b8d0;
+  border-radius: 25px;
   text-align: center;
+  font-family: 'Exo', sans-serif;
   height: 400px;
   width: 400px;
   padding: 5px;
