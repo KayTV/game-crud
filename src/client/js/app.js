@@ -13,6 +13,15 @@ angular.module('app', ['ngRoute'])
       templateUrl: 'showpage/showpage.html',
       controller: 'ShowpageController'
       })
+    .when('/register', {
+      templateUrl: 'register/register.html'
+    })
+    .when('/login', {
+      templateUrl: 'login/login.html'
+    })
+    // .when('/logout', {
+    //   templateUrl: 'register/register.html'
+    // })
 
     .otherwise({redirectTo: '/'});
   });
