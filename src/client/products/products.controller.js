@@ -11,4 +11,10 @@ function activate() {
   };
   activate();
 
+  $scope.setCurrentGame = function(id) {
+    httpFactory.setCurrentGame(id)
+      console.log(id);
+      // $scope.successMessage = 'Updated ' + $scope.movies[index].title;
+  };
+
 }]);

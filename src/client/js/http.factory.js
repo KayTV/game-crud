@@ -17,7 +17,7 @@ angular.module('app')
   };
 
   factory.getCurrentGame = function() {
-      return movieId;
+      return gameId;
   }
 
   factory.setCurrentGame = function(id) {

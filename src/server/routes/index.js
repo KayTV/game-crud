@@ -13,8 +13,8 @@ router.get('/games', function(req, res, next) {
 });
 
 router.get('/showpage/:id', function(req, res, next) {
-  Games().where('id', req.params.id).first().then(function(movie){
-    res.json(movie);
+  Games().where('id', req.params.id).first().then(function(game){
+    res.json(game);
   });
 })
 

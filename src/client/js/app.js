@@ -9,6 +9,10 @@ angular.module('app', ['ngRoute'])
       templateUrl: 'products/products.html',
       controller: 'ProductsController'
     })
+    .when('/showpage', {
+      templateUrl: 'showpage/showpage.html',
+      controller: 'ShowpageController'
+      })
 
     .otherwise({redirectTo: '/'});
   });
