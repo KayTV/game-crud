@@ -26,22 +26,6 @@ angular.module('app')
     return gameId;
   }
 
-  factory.registerUser = function() {
-    var user = {};
-    return $http({
-      method: 'POST',
-
-    })
-  }
-
-  factory.loginUser = function() {
-    var user = {};
-    return $http({
-      method: 'POST',
-
-    })
-  }
-
   return factory;
 
 }]);
