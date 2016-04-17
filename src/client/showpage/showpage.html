@@ -2,11 +2,13 @@
   <h1 class="headername">{{game.title}}</h1>
 </header>
 
-<section>
+<section style="text-align: center;">
   <div class="col-xs-6">
     <img ng-src="{{game.image}}" style="height: 70%; width: 70%">
   </div>
   <div class="col-xs-6">
+    <h3>Category: {{game.category}}</h3>
+    <h4>Price: {{game.price | currency}}</h4>
     <p>{{game.info}}</p>
   </div>
 </section>
