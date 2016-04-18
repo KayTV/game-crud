@@ -98,10 +98,10 @@
         $http.post('/register', {email: email, password: password})
           // handle success
           .success(function (data, status) {
-            console.log('in AuthFactory success');
+            console.log('in AuthFactory success', data, status);
             if(status === 200 && data.status){
               login(email, password);
-              user = username;
+              user = email;
               deferred.resolve();
             } else {
               deferred.reject();

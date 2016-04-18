@@ -40,7 +40,7 @@ router.post('/register', function(req, res, next) {
           password: hashedPassword
         })
         .then(function(data) {
-          res.json({message: 'successfully registered, please login!'})
+          res.json({message: 'successfully registered, please login!', status: 200})
         })
         .catch(function(err) {
           return res.json('crap');

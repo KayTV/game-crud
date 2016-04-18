@@ -21,7 +21,7 @@
           })
           // handle error
           .catch(function (response) {
-            console.log('error message', response.err);
+            console.log('error message', response);
             $scope.error = true;
             $scope.errorMessage = response.err.message
             $scope.disabled = false;

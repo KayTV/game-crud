@@ -31,7 +31,6 @@
       if(auth) {
         vm.user = authFactory.getUserName();
       }
-      console.log('auth', auth);
       return auth;
     };
   }
