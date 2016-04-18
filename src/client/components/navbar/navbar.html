@@ -9,21 +9,12 @@
       </button>
       <a class="navbar-brand" href="/#/"><img src="http://orig13.deviantart.net/0b77/f/2011/357/d/a/final_fantasy_v_logo_by_eldi13-d45iac8.png" style="width: 110%; margin-top: -15px;"/></a>
     </div>
-    <!-- <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
-      <ul class="nav navbar-nav">
-          <li><a href="/#/">Home</a></li>
-          <li><a href="/#/products">Products</a></li>
-        </ul> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/#/products" style="border: 1px solid black; border-radius: 25px; margin: 5px; height: 40px;">Game Library</a></li>
-        <li><a href="#" style="border: 1px solid black; border-radius: 25px; margin: 5px; height: 40px;">Add Game</a></li>
-        <li ng-if="!vm.isAuthenticated()"><a href="/#/register" style="border: 1px solid black; border-radius: 25px; margin: 5px; height: 40px;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li ng-if="!vm.isAuthenticated()"><a href="/#/login" style="border: 1px solid black; border-radius: 25px; margin: 5px; height: 40px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li ng-if="vm.isAuthenticated()" ng-controller="LogoutController">
-          <a href="/#/" ng-click="logout()" style="border: 1px solid black; border-radius: 25px; margin: 5px; height: 40px;">
-            <span class="glyphicon glyphicon-log-out"></span> Logout
-          </a>
-        </li>
+        <li><a href="/#/products" class="navstyle">Game Library</a></li>
+        <li><a href="#" class="navstyle">Add Game</a></li>
+        <li ng-if="!vm.isAuthenticated()"><a href="/#/register" class="navstyle"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li ng-if="!vm.isAuthenticated()"><a href="/#/login" class="navstyle"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li ng-if="vm.isAuthenticated()" ng-controller="LogoutController"><a href="/#/" ng-click="logout()" class="navstyle"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
       </ul>
     </nav>
   </div>
