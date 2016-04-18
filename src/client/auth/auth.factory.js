@@ -16,8 +16,7 @@
         getAdminStatus: getAdminStatus,
         login: login,
         logout: logout,
-        register: register,
-        githubLogin: githubLogin
+        register: register
       });
 
       function getUserStatus() {
@@ -48,7 +47,7 @@
         // create a new instance of deferred
         var deferred = $q.defer();
         // send a post request to the server
-        $http.post('/local/login', {email: email, password: password})
+        $http.post('/login', {email: email, password: password})
           // handle success
           .success(function (data, status) {
             if(status === 200 && data.status){
@@ -75,7 +74,7 @@
         // create a new instance of deferred
         var deferred = $q.defer();
         // send a get request to the server
-        $http.get('/local/logout')
+        $http.get('/logout')
           // handle success
           .success(function (data) {
             user = false;
@@ -96,7 +95,7 @@
         // create a new instance of deferred
         var deferred = $q.defer();
         // send a post request to the server
-        $http.post('/local/register', {email: email, password: password})
+        $http.post('/register', {email: email, password: password})
           // handle success
           .success(function (data, status) {
             console.log('in AuthFactory success');

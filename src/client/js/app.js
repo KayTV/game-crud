@@ -21,9 +21,9 @@ angular.module('app', ['ngRoute'])
       templateUrl: 'auth/login/login.html',
       controller: 'LoginController'
     })
-    // .when('/logout', {
-    //   templateUrl: 'register/register.html'
-    // })
+    .when('/logout', {
+      controller: 'LogoutController'
+    })
 
     .otherwise({redirectTo: '/'});
   });
