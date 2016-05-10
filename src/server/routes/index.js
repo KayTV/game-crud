@@ -85,5 +85,12 @@ router.post('/game', function(req, res, next) {
   })
 })
 
+router.delete('/showpage/:id', function(req, res, next){
+  Games().where('id', req.params.id).del()
+  .then(function(result){
+    res.json(result);
+  })
+})
+
 
 module.exports = router;

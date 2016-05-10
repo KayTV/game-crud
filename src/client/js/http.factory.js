@@ -34,6 +34,13 @@ angular.module('app')
     return gameId;
   }
 
+  factory.deleteGame = function(id) {
+    return $http({
+      method: 'DELETE',
+      url: '/showpage/'+id
+    });
+  }
+
   return factory;
 
 }]);
