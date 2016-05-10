@@ -6,6 +6,8 @@ angular.module('app')
     httpFactory.addGame($scope.newGame)
     .then(function(response){
       console.log('success', response);
+      $scope.successMessage = 'Successfully Added ' + $scope.newGame.title;
+      $scope.newGame = {};
     })
   }
 

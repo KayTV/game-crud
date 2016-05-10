@@ -3,13 +3,52 @@
 </header>
 
 <section>
-  <form>
-    <input ng-model="newGame.title" placeholder="title">
-    <input ng-model="newGame.image" placeholder="image">
-    <input ng-model="newGame.price" placeholder="price">
-    <input ng-model="newGame.rating" placeholder="rating">
-    <input ng-model="newGame.category" placeholder="category">
-    <input ng-model="newGame.info" placeholder="info">
-    <button ng-click="addGame()">Add Game</button>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="gameTitle" class="col-sm-3 control-label">Title of Game:</label>
+      <div class="col-sm-6">
+        <input type="text" ng-model="newGame.title" class="form-control" id="gameTitle" placeholder="Title">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gameImage" class="col-sm-3 control-label">Game Image:</label>
+      <div class="col-sm-6">
+        <input type="text" ng-model="newGame.image" class="form-control" id="gameImage" placeholder="Image">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gamePrice" class="col-sm-3 control-label">Price:</label>
+      <div class="input-group col-sm-6">
+        <div class="input-group-addon">$</div>
+          <input type="text" ng-model="newGame.price" class="form-control" id="gamePrice" placeholder="Price">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gameRating" class="col-sm-3 control-label">Game Rating:</label>
+      <div class="col-sm-6">
+        <input type="text" ng-model="newGame.rating" class="form-control" id="gameRating" placeholder="Rating">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gameCategory" class="col-sm-3 control-label">Game Category:</label>
+      <div class="col-sm-6">
+        <input type="text" ng-model="newGame.category" class="form-control" id="gameCategory" placeholder="Category">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gameInfo" class="col-sm-3 control-label">Game Info:</label>
+      <div class="col-sm-6">
+        <textarea ng-model="newGame.info" class="form-control" rows="5" id="gameInfo" placeholder="Info"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <button ng-click="addGame()" class="btn btn-default">Add Game</button>
+      </div>
+    </div>
   </form>
+  <div class="container">
+    <h4 class="alert alert-success" ng-show="successMessage"> {{ successMessage }} </h4>
+  </div>
 </section>

@@ -18,7 +18,7 @@ angular.module('app')
       console.log('deleted game');
       $location.path('/products');
     })
-    window.location = "/#/products"
+    // window.location = "/#/products"
   }
 
 }]);
