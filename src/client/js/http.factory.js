@@ -9,6 +9,14 @@ angular.module('app')
     });
   };
 
+  factory.addGame = function(game) {
+    return $http ({
+      method: 'POST',
+      url: '/game',
+      data: {game: game}
+    });
+  };
+
   factory.getGame = function(id) {
     return $http({
       method: 'GET',

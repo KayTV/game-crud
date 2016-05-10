@@ -67,7 +67,22 @@ router.get('/games', function(req, res, next) {
 router.get('/showpage/:id', function(req, res, next) {
   Games().where('id', req.params.id).first().then(function(game){
     res.json(game);
-  });
+  })
+});
+
+router.post('/game', function(req, res, next) {
+  console.log('hitting /game');
+  console.log(req.body);
+  Games().insert(req.body.game, 'id')
+  .then(function(result){
+    res.json({
+      status: 200,
+      message: 'Succesfully saved '+req.body.game
+    });
+  })
+  .catch(function(err){
+    console.log('errorrrrrrrrrr', err)
+  })
 })
 
 
